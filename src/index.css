@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #146C5A;
+    --primary-hover: #0E5244;
+    --secondary: #E8D8B9;
+    --accent: #B66A32;
+    --success: #2E8B57;
+    --error: #C13F4A;
+    --text-main: #242424;
+    --bg-light: #FDFBF7;
+  }
+
+  body {
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #242424;
+    background-color: #FDFBF7;
+  }
+}
+
+/* Bento Grid Card Utility Classes */
+.bento-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(232, 216, 185, 0.7);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(20, 108, 90, 0.04);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-card:hover {
+  box-shadow: 0 10px 30px rgba(20, 108, 90, 0.08);
+  border-color: rgba(20, 108, 90, 0.3);
+}
+
+.bento-card-primary {
+  background: linear-gradient(135deg, #146C5A 0%, #0E5244 100%);
+  color: #ffffff;
+  border: 1px solid rgba(232, 216, 185, 0.3);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 25px rgba(20, 108, 90, 0.15);
+}
+
+.bento-card-cream {
+  background-color: rgba(232, 216, 185, 0.35);
+  border: 1px solid rgba(182, 106, 50, 0.2);
+  border-radius: 1.5rem;
+  color: #146C5A;
+}
+
+.bento-card-accent {
+  background: linear-gradient(135deg, #B66A32 0%, #985324 100%);
+  color: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 25px rgba(182, 106, 50, 0.15);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #146C5A22;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #146C5A66;
+}
+
+/* Custom Leaflet Map fix */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  font-family: 'Manrope', sans-serif !important;
+  border-radius: 0.75rem;
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+

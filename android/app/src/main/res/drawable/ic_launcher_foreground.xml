@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- House Roof Line -->
+    <path
+        android:fillColor="#E8D8B9"
+        android:pathData="M54,28 L28,50 L34,50 L54,34 L74,50 L80,50 Z" />
+    
+    <!-- House Body & Key Door -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,52 L74,52 L74,78 C74,80 72,82 70,82 L38,82 C36,82 34,80 34,78 Z" />
+        
+    <!-- Golden Keyhole / Link Accent -->
+    <path
+        android:fillColor="#B66A32"
+        android:pathData="M54,60 C51.8,60 50,61.8 50,64 C50,65.5 50.8,66.8 52,67.4 L52,74 C52,75.1 52.9,76 54,76 C55.1,76 56,75.1 56,74 L56,67.4 C57.2,66.8 58,65.5 58,64 C58,61.8 56.2,60 54,60 Z" />
+</vector>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CasaLink</string>
+    <string name="app_tagline">Connecting Landlords &amp; Tenants Directly in Kenya</string>
+    <string name="permission_location_rationale">CasaLink requires GPS location to find houses near you and show turn-by-turn directions.</string>
+    <string name="permission_camera_rationale">CasaLink needs camera access to let landlords capture house photos and verify listings.</string>
+    <string name="file_provider_authority">com.casalink.app.fileprovider</string>
+</resources>
